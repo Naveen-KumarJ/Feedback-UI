@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack UI</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="feedback-container">
+            <h1>Give Feedback</h1>
+            <div class="option-emojis-container">
+                <div class="title">What do you think of the editing tool?</div>
+                <div class="options">
+                    <div class="each-option">
+                        <img src="./assets/unhappy-emoji.svg" alt="">
+                        <h4>Unhappy</h4>
+                    </div>
+                    <div class="each-option">
+                        <img src="./assets/neutral-emoji.svg" alt="">
+                        <h4>Neutral</h4>
+                    </div>
+                    <div class="each-option">
+                        <img src="./assets/happy-emoji.svg" alt="">
+                        <h4>Satisfied</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="thoughts-container">
+                <div class="title">Do you have any thoughts you'd like to share?</div>
+                <div class="input-thought">
+                    <textarea></textarea>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <button id="send-btn">Send</button>
+                <button id="cancel-btn">Cancel</button>
+            </div>
+        </div>
+        <div class="output-container">
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

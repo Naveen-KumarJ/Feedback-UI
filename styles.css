@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Montserrat", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0FFFF;
+}
+
+.each-option img{
+    width: 44px;
+    height: auto;
+}
+.feedback-container{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    /* display: none; */
+}
+.option-emojis-container, .thoughts-container{
+    display: flex;
+    flex-direction: column;
+}
+.option-emojis-container{
+    gap: 30px;
+}
+.thoughts-container{
+    gap: 10px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.each-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    width: 7rem;
+    height: 6rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.each-option h4{
+    font-weight: 600;
+}
+.each-option:hover{
+    background-color: #8FBC8F !important;
+    color: white !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.input-thought{
+    height: 148px;
+}
+.input-thought textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+textarea:focus{
+    border: 2px solid #8FBC8F;
+}
+.buttons-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+button{
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 132px;
+    height: 44px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    border: 1px solid #7ca9f1;
+    
+}
+button:hover{
+    background-color: #3C70FF;
+    color:white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.output-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    display: none;
+}
+.output-container p{
+    width: 80%;
+    text-align: center;
+}
